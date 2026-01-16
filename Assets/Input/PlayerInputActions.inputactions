@@ -1,0 +1,25 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "player-map",
+            "actions": [
+                { "name": "Move", "type": "Value", "expectedControlType": "Vector2" },
+                { "name": "Look", "type": "Value", "expectedControlType": "Vector2" },
+                { "name": "Jump", "type": "Button" },
+                { "name": "Sprint", "type": "Button" }
+            ],
+            "bindings": [
+                { "path": "<Keyboard>/w", "action": "Move", "isPartOfComposite": true, "name": "up" },
+                { "path": "<Keyboard>/s", "action": "Move", "isPartOfComposite": true, "name": "down" },
+                { "path": "<Keyboard>/a", "action": "Move", "isPartOfComposite": true, "name": "left" },
+                { "path": "<Keyboard>/d", "action": "Move", "isPartOfComposite": true, "name": "right" },
+
+                { "path": "<Mouse>/delta", "action": "Look" },
+                { "path": "<Keyboard>/space", "action": "Jump" },
+                { "path": "<Keyboard>/leftShift", "action": "Sprint" }
+            ]
+        }
+    ]
+}
